@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+
+  <style>
+    body {
+      font-size: 20px;
+      background-color: black;
+      padding-top: 5rem;
+    }
+
+    .title {
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .sub-title {
+      font-size: 1.1rem;
+      color: gray;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .sign-up-form {
+      text-align: center;
+      width: 25%;
+      margin: 0 auto;
+    }
+
+    .sign-up-form input {
+      width: 90%;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 5px;
+      background-color: #212529;
+      margin: 0.1rem auto;
+      color: white;
+      padding: 0.3rem;
+    }
+
+    input#submit {
+      margin-top: 2rem;
+    }
+
+    ::-webkit-input-placeholder {
+      text-align: center;
+    }
+
+    .forgot-pwd-text {
+      color: gray;
+      text-align: right;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .line {
+      background-color: white;
+      width: 25%;
+      margin-top: 2rem;
+    }
+
+    .login-buttons {
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    input#mob,
+    input#pin {
+      width: 12rem;
+    }
+    .login-pin,
+    .login-mob,
+    .or-text {
+      display: inline-block;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="title">Already have an Account ?</div>
+      <div class="sub-title">
+        Login using a registered Email ID / Mobile Number
+      </div>
+      <div class="sign-up-form">
+        <form>
+          <input type="email" id="mail" placeholder="Email" /><br /><br />
+          <input type="password" id="pwd" placeholder="Password" /><br /><br />
+          <input type="submit" id="submit" value="LOGIN" />
+        </form>
+        <div class="forgot-pwd-text">Forgot Password ?</div>
+      </div>
+    </div>
+    <hr class="line" />
+    <div class="login-buttons">
+      <div class="login-pin">
+        <input type="button" id="pin" value="LOGIN WITH PIN" />
+      </div>
+      <div class="or-text">OR</div>
+      <div class="login-mob">
+        <input type="button" id="mob" value="SIGNUP" />
+      </div>
+    </div>
+  </body>
+</html>

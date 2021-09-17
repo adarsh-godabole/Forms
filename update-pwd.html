@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+
+  <style>
+    body {
+      font-size: 20px;
+      background-color: black;
+      padding-top: 5em;
+    }
+
+    .title {
+      font-size: 2em;
+      color: white;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .sub-title {
+      font-size: 1.1em;
+      color: gray;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .sign-up-form {
+      text-align: center;
+      width: 40%;
+      margin: 0 auto;
+    }
+
+    .sign-up-form input {
+      width: 80%;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 5px;
+      background-color: #212529;
+      margin: 0.1em auto;
+      color: white;
+      padding: 0.3em;
+      font-size: 0.7em;
+    }
+
+    input#submit {
+      margin-top: 2em;
+    }
+
+    ::-webkit-input-placeholder {
+      text-align: center;
+    }
+
+    :-moz-placeholder {
+      /* Firefox 18- */
+      text-align: center;
+    }
+
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      text-align: center;
+    }
+
+    :-ms-input-placeholder {
+      text-align: center;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    .forgot-pwd-text {
+      color: gray;
+      text-align: right;
+      padding: 1.5em 1em;
+      font-size: 0.9em;
+    }
+
+    .line {
+      background-color: white;
+      width: 25%;
+      margin-top: 2em;
+    }
+
+    .login-buttons {
+      margin: 2em auto;
+      text-align: center;
+    }
+
+    input#mob,
+    input#pin {
+      width: 12em;
+    }
+    .login-pin,
+    .login-mob,
+    .or-text {
+      display: inline-block;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      height: 20em;
+    }
+
+    .updpwd {
+      display: inline-block;
+      width: 10% !important;
+    }
+
+    @media only screen and (max-width: 748px) {
+      .sign-up-form {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+      }
+      ::-webkit-input-placeholder {
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+      }
+    }
+    @media only screen and (min-width: 1440px) {
+      body {
+        font-size: 2em;
+      }
+    }
+
+    @media only screen and (min-width: 2000px) {
+      body {
+        font-size: 3.5em;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="title">Set New Password</div>
+      <div class="sub-title">Please enter the OTP Sent to your email</div>
+      <div class="sign-up-form">
+        <form>
+          <input
+            type="number"
+            class="updpwd"
+            min="0"
+            max="9"
+            maxlength="1"
+            placeholder="-"
+          />
+          <input
+            type="number"
+            class="updpwd"
+            min="0"
+            max="9"
+            maxlength="1"
+            placeholder="-"
+          />
+          <input
+            type="number"
+            class="updpwd"
+            min="0"
+            max="9"
+            maxlength="1"
+            placeholder="-"
+          />
+          <input
+            type="number"
+            class="updpwd"
+            min="0"
+            max="9"
+            maxlength="1"
+            placeholder="-"
+          />
+          <input
+            type="number"
+            class="updpwd"
+            min="0"
+            max="9"
+            maxlength="1"
+            placeholder="-"
+          />
+          <input
+            type="number"
+            class="updpwd"
+            min="0"
+            max="9"
+            placeholder="-"
+          /><br /><br />
+          <input
+            type="password"
+            id="pwd"
+            placeholder="Enter new Password"
+          /><br /><br />
+          <input type="submit" id="submit" value="UPDATE" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

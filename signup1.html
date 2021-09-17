@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+  </head>
+
+  <style>
+    body {
+      font-size: 20px;
+      background-color: black;
+      padding-top: 5rem;
+    }
+
+    .title {
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .sub-title {
+      font-size: 1.1rem;
+      color: gray;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .sign-up-form {
+      text-align: center;
+      width: 25%;
+      margin: 0 auto;
+    }
+
+    .sign-up-form input {
+      width: 90%;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 10px;
+      background-color: #212529;
+      margin: 0.1rem auto;
+      color: white;
+      padding: 0.3rem;
+    }
+
+    input#submit {
+      margin-top: 2rem;
+    }
+
+    ::-webkit-input-placeholder {
+      text-align: center;
+    }
+
+    .terms-text {
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .line {
+      background-color: white;
+      width: 20%;
+    }
+
+    .login-buttons {
+      margin: 2rem auto;
+      text-align: center;
+    }
+    .login-pin,
+    .login-mob,
+    .or-text {
+      display: inline-block;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="title">Create a New Account</div>
+      <div class="sub-title">
+        SIgn Up using a Valid Email ID / Mobile Number
+      </div>
+      <div class="sign-up-form">
+        <form>
+          <input type="text" id="name" placeholder="Name" /><br /><br />
+          <input type="email" id="mail" placeholder="Email" /><br /><br />
+          <input type="password" id="pwd" placeholder="Password" /><br /><br />
+          <input type="submit" id="submit" value="SIGN UP" />
+        </form>
+      </div>
+    </div>
+    <div class="terms-text">
+      By Signing up you agree to our Terms & Privacy policy
+    </div>
+    <hr class="line" />
+    <div class="login-buttons">
+      <div class="login-pin">
+        <input type="button" id="pin" value="LOGIN WITH PIN" />
+      </div>
+      <div class="or-text">OR</div>
+      <div class="login-mob">
+        <input type="button" id="mob" value="LOGIN WITH EMAIL/MOB" />
+      </div>
+    </div>
+  </body>
+</html>
